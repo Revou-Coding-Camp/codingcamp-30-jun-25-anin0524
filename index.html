@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-black font-sans">
+  <!-- Container -->
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo">
+          <span>🧐</span>
+        </div>
+      </div>
+      <nav class="navigation">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Our Profile</a>
+        <a href="#" class="nav-link">Portfolio</a>
+        <a href="#" class="nav-link">Message Us</a>
+      </nav>
+    </header>
+
+    <!-- Main content top -->
+    <main class="main-content">
+      <h1 class="welcome-title">Hi Yodya, Welcome To Website</h1>
+      <p class="welcome-subtitle">Ini adalah website Latihan Pertama</p>
+      <div class="hero-box">
+        <img src="gambar1.jpg" alt="" srcset="">
+      </div>
+    </main>
+
+    <!-- Our Headquarter section -->
+    <section class="headquarter-section">
+      <h2 class="section-title">Our Headquarter</h2>
+      <div class="hq-container">
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <span class="hq-label">Jakarta</span>
+        </div>
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <span class="hq-label">Bandung</span>
+        </div>
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <span class="hq-label">Surabaya</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us section -->
+    <section class="message-section">
+      <!-- Form left side -->
+      <form id="messageForm" class="message-form">
+        <h3 class="form-title">Message Us</h3>
+
+        <label class="form-label" for="name">
+          <span class="label-text">Nama</span>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Nama"
+            class="form-input"
+            required
+          />
+        </label>
+
+        <label class="form-label" for="birthdate">
+          <span class="label-text">Tanggal Lahir</span>
+          <input
+            id="birthdate"
+            name="birthdate"
+            type="date"
+            class="form-input"
+            required
+          />
+        </label>
+
+        <fieldset class="form-fieldset">
+          <legend class="label-text">Jenis Kelamin</legend>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="Laki-Laki" required />
+            <span>Laki-Laki</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="Perempuan" />
+            <span>Perempuan</span>
+          </label>
+        </fieldset>
+
+        <label class="form-textarea-label">
+          <span class="label-text">Pesan</span>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Pesan"
+            class="form-textarea"
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit" class="submit-button">
+          Submit
+        </button>
+      </form>
+
+      <!-- Display right side -->
+      <div id="displayArea" class="display-area">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Created By RevoU
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
