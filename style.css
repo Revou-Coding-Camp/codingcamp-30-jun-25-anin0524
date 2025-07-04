@@ -75,7 +75,7 @@ body {
 
 .hero-box {
   width: 100%;
-  height: 570px;
+  height: auto;
   max-width: 1366px;
   margin: 0 auto;
   display: flex;
